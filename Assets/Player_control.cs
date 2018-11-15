@@ -21,4 +21,11 @@ public class Player_control : MonoBehaviour {
 
 
 	}
+
+
+    void OnCollisionEnter(Collision collision)  //This method is called when the object collides with something
+    {
+        //Did an enemy bullet hit me?
+    }
+
 }
