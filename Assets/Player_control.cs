@@ -23,9 +23,13 @@ public class Player_control : MonoBehaviour {
 	}
 
 
-    void OnCollisionEnter(Collision collision)  //This method is called when the object collides with something
+    void OnCollisionEnter(Collision col)  //This method is called when the object collides with something
     {
         //Did an enemy bullet hit me?
+        if (col.gameObject.tag == "Enemy") {
+            Time.timeScale = 0;
+            Debug.Log("YOU LOSE!");
+        }
     }
 
 }

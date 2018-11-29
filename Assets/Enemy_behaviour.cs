@@ -16,9 +16,6 @@ public class Enemy_behaviour : MonoBehaviour {
 		
 	}
 
-    void OnCollisionEnter(Collision collision)  //This method is called when the object collides with something
-    {
-        //check if Im getting hit by a bullet X(
-    }
+   
 
 }
